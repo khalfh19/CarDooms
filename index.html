@@ -390,9 +390,9 @@
           </div>
         </div>
 
-        <div class="control-group">
+        <!-- <div class="control-group">
           <button class="shoot-btn" id="shootButton">TEMBAK</button>
-        </div>
+        </div> -->
       </div>
 
       <!-- Screens -->
@@ -470,7 +470,7 @@
           WIDTH: 20,
           HEIGHT: 20,
           SPEED: 2,
-          DURATION: 300,
+          DURATION: 800,
         },
         GAME: {
           SCORE_PER_KILL: 10,
@@ -823,7 +823,7 @@
 
         // Cooldown hanya untuk desktop manual shooting
         if (!gameState.isMobileDevice && !gameState.activePowerups.rapid.active) {
-          gameState.shootCooldown = 15;
+          gameState.shootCooldown = 5;
         }
       }
 
